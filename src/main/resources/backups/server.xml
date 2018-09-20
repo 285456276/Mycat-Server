@@ -7,7 +7,7 @@
 	WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. - See the 
 	License for the specific language governing permissions and - limitations 
 	under the License. -->
-<!DOCTYPE mycat:server SYSTEM "server.dtd">
+<!DOCTYPE mycat:server SYSTEM "/home/and/Documents/github/Mycat-Server/src/main/resources/backups/server.dtd">
 <mycat:server xmlns:mycat="http://io.mycat/">
 	<system>
 	<property name="nonePasswordLogin">0</property> <!-- 0为需要密码登陆、1为不需要密码登陆 ,默认为0，设置为1则需要指定默认账户-->
