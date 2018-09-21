@@ -46,7 +46,7 @@ public class PartitionByRangeModTest
     @Test
     public void test()  {
         PartitionByRangeMod autoPartition = new PartitionByRangeMod();
-        autoPartition.setMapFile("partition-range-mod.txt");
+        autoPartition.setMapFile("backups/partition-range-mod.txt");
         autoPartition.init();
         String idVal = "0";
         Assert.assertEquals(true, 0 == autoPartition.calculate(idVal));
@@ -86,8 +86,8 @@ public class PartitionByRangeModTest
     protected RouteStrategy routeStrategy = RouteStrategyFactory.getRouteStrategy("druidparser");
 
     public PartitionByRangeModTest() {
-        String schemaFile = "/route/schema.xml";
-        String ruleFile = "/route/rule.xml";
+        String schemaFile = "/backups/route/schema.xml";
+        String ruleFile = "/backups/route/rule.xml";
         SchemaLoader schemaLoader = new XMLSchemaLoader(schemaFile, ruleFile);
         schemaMap = schemaLoader.getSchemas();
     }
